@@ -1,0 +1,257 @@
+* {
+  scroll-behavior: smooth;
+}
+body{
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0 auto;
+}
+.navbar{
+  background-color: #BCE2F7;
+  display: flex;
+  box-shadow: 0px 6px 21px -9px rgba(0,0,0,1);
+  text-transform: uppercase;
+}
+.brand{
+  padding: 1rem;
+  font-size: 1.3rem;
+  flex: 4;
+}
+.topnav{
+  display: flex;
+  list-style: none;
+  padding-top: 0.2rem;
+}
+.nav-link{
+  padding: 0 10px;
+  text-decoration: none;
+  color: #303137;
+  flex: 2;
+  transition: 0.1s ease-in-out;
+}
+.nav-link:hover{
+  cursor:pointer;
+  color: blue;
+}
+.span-nav{
+  flex: 1;
+}
+.dropDownLink a{
+  color: #303137;
+  text-decoration: none;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 12px;
+  right: 2rem;
+  display: none;
+}
+@media (max-width: 768px) {
+  .dropDownLink a{
+    display: block;
+  }
+  .nav-link{
+    display: none;
+  }
+  .span-nav{
+    display: none;
+  }
+  .topnav{
+      flex-direction: column;
+  }
+  ul.topnav.responsive a.nav-link{
+    display: block;
+    position: relative;
+    top: 20px;
+    right: 20px;
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.headshot-container{
+  background-color: white;
+  padding: 5rem 0;
+}
+.headshot-wrapper{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#profile-img{
+  width: 200px;
+  height: 200px
+  border: 2px solid #BCE2F7;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+.headshot-sub {
+  margin-top: -10px;
+  font-weight: 200;
+}
+.headshot-title{
+  font-weight: 350;
+}
+.resume{
+  width: 200px;
+  font-size: 1.4rem;
+  padding: 5px;
+  background-color: rgb(178,255,102);
+  color: white;
+  border-radius: 8px;
+  margin: 0 auto;
+  font-weight: 300;
+  border: none;
+  box-shadow: 0px 6px 21px -9px rgba(0,0,0,1);
+  transition: 0.5s ease-in-out;
+}
+.resume:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* intro section */
+.intro-container{
+    padding: 3rem, 3rem;
+    display: flex;
+    justify-content: space-around;
+    margin: 0
+}
+@media (max-width: 768px) {
+  .intro-container{
+    flex-direction:column;
+  }
+  .intro-img{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .intro-title{
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  .intro-wrapper{
+    margin: 0 auto;
+  }
+}
+.intro-wrapper{
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.intro-img{
+  max-width: 200px;
+  width: 100px;
+  margin: 0 auto;
+  justify-content: center;
+  display: block;
+}
+
+.intro-title, .intro-sub{
+    text-align: center;
+}
+
+.intro-title{
+  margin-top: 2rem;
+  margin-bottom: -0.5rem;
+  font-weight: 525;
+}
+
+.intro-sub{
+  font-weight: lighter;
+}
+
+/* Statement section */
+.statement-container{
+    padding: 6rem 6rem;
+}
+.statement-wrapper{
+  display:flex;
+}
+
+.statement-wrapper-2{
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 2.5rem;
+}
+@media (max-width: 768px) {
+  .statement-wrapper, .statement-wrapper-2{
+    display: flex;
+    flex-direction: column;
+  }
+  .statement-img{
+    margin: 0 auto;
+}
+  .statement-text, .statement-text-2{
+    text-align:center;
+  }
+}
+.statement-img{
+  width: 400px;
+  height: auto;
+  max-height: 300px;
+  padding: 0 2rem;
+
+}
+.statement-text{
+  padding: 0 3rem;
+}
+.statement-text-2{
+  padding: 0 2rem;
+}
+.statement-content{
+  font-weight: 300px;
+}
+/* parallex */
+.parallex-container{
+  padding: 5rem 5rem;
+  background-image: url("../source/corgi.jpg");
+/* Portfolio */
+.portfolio-container{
+  padding: 5rem 8rem;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.portfolio-item{
+  max-width: 200px;
+  padding:3px;
+  margin: 0 2rem;
+}
+.placeholder-img{
+  width: 200px;
+  height: 200px;
+  background:#CCCCFF;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+}
+.placeholder-img:hover{
+  transform: scale(1.1);
+}
+#portfolio-img{
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  transition: 0.5s ease-in-out;
+}
+#portfolio-img:hover{
+  transform: scale(1.1);
+}
+/* Footer section */
+.footer-container{
+  background-color: #BCE2F7;
+  padding: 3rem 0;
+}
+.contact-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  color: #fff;
+  font-weight: lighter;
+}
+.contact-email{
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+}
